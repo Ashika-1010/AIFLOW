@@ -1,0 +1,11 @@
+Security Policy — AIFlow Platform
+
+All API keys must be rotated every 90 days. Leaked keys should be revoked immediately via the dashboard at app.aiflow.dev/settings/keys and a new key issued.
+
+Transport: All API traffic must use TLS 1.2 or higher. HTTP requests are automatically redirected to HTTPS. Certificate pinning is available for Enterprise accounts.
+
+Authentication: API keys must be sent in the Authorization header as "Bearer <key>". Never include API keys in query strings or request bodies.
+
+Vulnerability disclosure: Security researchers may report vulnerabilities to security@aiflow.dev. We follow a 90-day coordinated disclosure policy. Critical vulnerabilities (CVSS >= 9.0) are patched within 24 hours.
+
+Access control: Production infrastructure access requires MFA and is logged. Engineers use temporary credentials via AWS IAM Identity Center with 8-hour session limits.

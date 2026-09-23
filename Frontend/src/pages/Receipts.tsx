@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext';
+import { listReceipts } from '../mock/api';
 import { Table, type Column } from '../components/ui/Table';
 import { Badge } from '../components/ui/Badge';
 import { Button } from '../components/ui/Button';
+import { Skeleton } from '../components/ui/Skeleton';
 import { formatWh, formatLatency } from '../lib/format';
 import type { Receipt } from '../mock/types';
 import { ArrowRight, Play } from 'lucide-react';
@@ -11,18 +13,42 @@ import { SectionLabel } from '../components/ui/SectionLabel';
 
 export const Receipts: React.FC = () => {
   const navigate = useNavigate();
-  const { receipts } = useApp();
+  const { receipts: contextReceipts } = useApp();
+  const [apiReceipts, setApiReceipts] = useState<Receipt[] | null>(null);
+
+  useEffect(() => {
+    listReceipts()
+      .then(setApiReceipts)
+      .catch(() => setApiReceipts([]));
+  }, []);
+
+  // Merge: API receipts are the baseline; new session runs (in context) prepend
+  const receipts: Receipt[] = React.useMemo(() => {
+    if (apiReceipts === null) return [];
+    const apiIds = new Set(apiReceipts.map(r => r.id));
+    const newOnes = contextReceipts.filter(r => !apiIds.has(r.id));
+    return [...newOnes, ...apiReceipts];
+  }, [apiReceipts, contextReceipts]);
+
+  const loading = apiReceipts === null;
 
   const columns: Column<Receipt>[] = [
     {
       key: 'id',
       header: 'RECEIPT ID',
       render: (r) => (
-        <span className="font-mono text-accent font-semibold tracking-wider">
-          #{r.id}
-        </span>
+        <div className="flex items-center gap-2">
+          <span className="font-mono text-accent font-semibold tracking-wider">
+            #{r.id}
+          </span>
+          {r.isDemo && (
+            <span className="text-[9px] font-mono font-bold px-1.5 py-0.5 rounded border border-amber-400/40 text-amber-400/80 bg-amber-400/10 leading-none">
+              DEMO
+            </span>
+          )}
+        </div>
       ),
-      className: 'w-28'
+      className: 'w-36'
     },
     {
       key: 'query',
@@ -93,25 +119,31 @@ export const Receipts: React.FC = () => {
         <div className="text-xs font-mono text-dim">Click any row to inspect full receipt</div>
       </div>
 
-      <Table<Receipt>
-        columns={columns}
-        data={receipts}
-        keyExtractor={(r) => r.id}
-        onRowClick={(r) => navigate(`/receipts/${r.id}`)}
-        emptyMessage={
-          <div className="py-12 text-center space-y-3">
-            <p className="text-muted text-sm font-mono">No requests yet.</p>
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => navigate('/')}
-              leftIcon={<Play className="w-3.5 h-3.5" />}
-            >
-              Go to Live Run
-            </Button>
-          </div>
-        }
-      />
+      {loading ? (
+        <div className="space-y-2">
+          {[...Array(6)].map((_, i) => <Skeleton key={i} className="h-12 w-full" />)}
+        </div>
+      ) : (
+        <Table<Receipt>
+          columns={columns}
+          data={receipts}
+          keyExtractor={(r) => r.id}
+          onRowClick={(r) => navigate(`/receipts/${r.id}`)}
+          emptyMessage={
+            <div className="py-12 text-center space-y-3">
+              <p className="text-muted text-sm font-mono">No requests yet.</p>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => navigate('/')}
+                leftIcon={<Play className="w-3.5 h-3.5" />}
+              >
+                Go to Live Run
+              </Button>
+            </div>
+          }
+        />
+      )}
     </div>
   );
 };

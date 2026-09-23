@@ -1,0 +1,14 @@
+GDPR Compliance — AIFlow
+
+AIFlow is a data processor under GDPR when processing personal data on behalf of EU-based customers (data controllers). A Data Processing Agreement (DPA) is available at app.aiflow.dev/legal/dpa.
+
+Data subject rights supported:
+- Right of access: Request a copy of all data we hold about you via privacy@aiflow.dev
+- Right to erasure: Submit a deletion request; fulfilled within 72 hours for user data, 30 days for backup propagation
+- Right to portability: Export all request logs in JSON format from the dashboard
+
+Sub-processors include AWS (infrastructure), Groq (model inference), and Stripe (billing). Full sub-processor list at aiflow.dev/sub-processors.
+
+Data is processed in the EU (eu-central-1) by default. US region processing available for customers who explicitly select it. Cross-border transfers use Standard Contractual Clauses.
+
+For GDPR enquiries, contact our Data Protection Officer at dpo@aiflow.dev.

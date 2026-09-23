@@ -1,0 +1,18 @@
+HTTP Status Code Quick Reference
+
+1xx Informational:
+100 Continue, 101 Switching Protocols, 102 Processing
+
+2xx Success:
+200 OK, 201 Created, 202 Accepted, 204 No Content, 206 Partial Content
+
+3xx Redirection:
+301 Moved Permanently, 302 Found, 304 Not Modified, 307 Temporary Redirect, 308 Permanent Redirect
+
+4xx Client Errors:
+400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 405 Method Not Allowed, 409 Conflict, 410 Gone, 422 Unprocessable Entity, 429 Too Many Requests
+
+5xx Server Errors:
+500 Internal Server Error, 501 Not Implemented, 502 Bad Gateway, 503 Service Unavailable, 504 Gateway Timeout
+
+HTTP 429 Too Many Requests: The server is temporarily refusing to service requests because the client has exceeded its rate limit. The Retry-After header specifies how many seconds to wait before retrying. Implement exponential backoff to avoid cascading retry storms.

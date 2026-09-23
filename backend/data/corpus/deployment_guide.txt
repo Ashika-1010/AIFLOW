@@ -1,0 +1,17 @@
+Deployment Guide — AIFlow Self-Hosted
+
+Requirements: Python 3.11+, 4GB RAM minimum (8GB recommended), 2 CPU cores.
+
+Installation:
+1. Clone the repository: git clone https://github.com/aiflow/backend
+2. Create a virtual environment: python -m venv .venv && source .venv/bin/activate
+3. Install dependencies: pip install -r requirements.txt
+4. Configure environment: cp .env.example .env and fill in required values
+5. Initialize database: python -c "from db import init_db; init_db()"
+6. Train classifier: python scripts/train_classifier.py
+7. Seed demo data: python scripts/seed_demo.py
+8. Start server: uvicorn main:app --host 0.0.0.0 --port 8000
+
+Production deployment should use a process manager (systemd, supervisord) and reverse proxy (nginx, Caddy) for TLS termination.
+
+Environment variables required: See .env.example. At minimum, set SECRET_KEY. All other variables have sensible defaults.

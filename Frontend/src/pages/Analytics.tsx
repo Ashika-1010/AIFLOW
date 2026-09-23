@@ -21,7 +21,7 @@ import {
 } from 'recharts';
 
 export const Analytics: React.FC = () => {
-  const { pessimistic, region } = useApp();
+  const { pessimistic } = useApp();
   const [data, setData] = useState<AnalyticsPayload | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
@@ -49,8 +49,12 @@ export const Analytics: React.FC = () => {
     );
   }
 
-  // Adjust CO2e saved based on region grid intensity factor
-  const regionalCO2ePct = pessimistic ? 29 : Math.round(34 * (region.gridIntensity / 713 * 0.15 + 0.85));
+  // CO₂e saved percentage — use the backend-aggregated value from real receipt data.
+  // The backend computes this from stored per-receipt co2e_central values where available,
+  // falling back to energy savings for historical receipts.
+  const co2eSavedPct = pessimistic
+    ? Math.round(data.co2eSavedPct * 0.85)   // pessimistic: scale back by ~15%
+    : data.co2eSavedPct;
 
   return (
     <div className="space-y-8">
@@ -75,7 +79,7 @@ export const Analytics: React.FC = () => {
         />
         <StatTile
           label="CO₂E SAVED"
-          value={formatPct(regionalCO2ePct)}
+          value={formatPct(co2eSavedPct)}
           sublabel="estimated"
           color="green"
         />

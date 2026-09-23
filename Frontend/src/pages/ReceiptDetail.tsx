@@ -13,7 +13,7 @@ import { PathwayTrace } from '../components/PathwayTrace';
 import { BaselineComparison } from '../components/BaselineComparison';
 import { Skeleton } from '../components/ui/Skeleton';
 import { formatLatency, formatUsd, formatCO2eRange, formatGridIntensity } from '../lib/format';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, FlaskConical } from 'lucide-react';
 
 export const ReceiptDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -77,10 +77,26 @@ export const ReceiptDetail: React.FC = () => {
     );
   }
 
-  // Calculate live regional CO2e
-  const multiplier = pessimistic ? 1.4 : 1.0;
-  const lowCO2e = (receipt.energyWh.low / 1000) * region.gridIntensity * multiplier;
-  const highCO2e = (receipt.energyWh.high / 1000) * region.gridIntensity * multiplier;
+  // CO₂e estimate — prefer backend-computed values when available.
+  // For historical/demo receipts without co2eGrams, fall back to the
+  // frontend formula using the currently-selected region.
+  // The pessimistic toggle is applied only to the frontend fallback path;
+  // backend-provided values already use the region at request time.
+  const hasCo2e = !!receipt?.co2eGrams;
+  const fallbackMultiplier = pessimistic ? 1.4 : 1.0;
+  const lowCO2e = hasCo2e
+    ? receipt!.co2eGrams!.low
+    : (receipt ? (receipt.energyWh.low / 1000) * region.gridIntensity * fallbackMultiplier : 0);
+  const highCO2e = hasCo2e
+    ? receipt!.co2eGrams!.high
+    : (receipt ? (receipt.energyWh.high / 1000) * region.gridIntensity * fallbackMultiplier : 0);
+
+  const co2eGridIntensity = hasCo2e
+    ? receipt!.co2eGrams!.gridIntensityGPerKwh
+    : region.gridIntensity;
+  const co2eGridSource = hasCo2e
+    ? receipt!.co2eGrams!.gridIntensitySource
+    : 'static';
 
   const currentAiflowEnergy = pessimistic ? receipt.energyWh.high : receipt.energyWh.central;
   const currentBaselineEnergy = pessimistic ? receipt.baselineEnergyWh * 1.4 : receipt.baselineEnergyWh;
@@ -97,6 +113,18 @@ export const ReceiptDetail: React.FC = () => {
           <span>Back to all receipts</span>
         </button>
       </div>
+
+      {/* Demo receipt notice */}
+      {receipt.isDemo && (
+        <div className="flex items-start gap-2.5 text-xs font-mono text-amber-400 bg-amber-400/10 border border-amber-400/30 rounded-lg px-4 py-3">
+          <FlaskConical className="w-4 h-4 shrink-0 mt-0.5" />
+          <span>
+            <span className="font-bold">DEMO RECEIPT</span> — This record is a pre-seeded fixture
+            used to demonstrate the AIFlow interface. It is excluded from all Audit and Analytics
+            metric calculations.
+          </span>
+        </div>
+      )}
 
       {/* Header Banner */}
       <Card className="space-y-3">
@@ -179,8 +207,8 @@ export const ReceiptDetail: React.FC = () => {
 
           {/* CO2e Estimate Card */}
           <Card className="space-y-3">
-            <SectionLabel>CO₂E ESTIMATE</SectionLabel>
-            
+            <SectionLabel>CO₂E ESTIMATE (estimated, not measured)</SectionLabel>
+
             <div className="text-2xl md:text-3xl font-mono font-bold text-text tabular-nums tracking-tight">
               {formatCO2eRange(lowCO2e, highCO2e)}
             </div>
@@ -188,16 +216,32 @@ export const ReceiptDetail: React.FC = () => {
             <div className="grid grid-cols-2 gap-4 py-2 border-y border-border/60 text-xs font-mono">
               <div>
                 <span className="text-muted block text-[10px] uppercase tracking-wider">GRID INTENSITY</span>
-                <span className="text-text font-semibold">{formatGridIntensity(region.gridIntensity)}</span>
+                <span className="text-text font-semibold">{formatGridIntensity(co2eGridIntensity)}</span>
               </div>
               <div>
-                <span className="text-muted block text-[10px] uppercase tracking-wider">REGION</span>
-                <span className="text-accent font-semibold">{region.label}</span>
+                <span className="text-muted block text-[10px] uppercase tracking-wider">
+                  {hasCo2e ? 'REGION AT REQUEST TIME' : 'REGION (CURRENT)'}
+                </span>
+                <span className="text-accent font-semibold">
+                  {hasCo2e ? receipt!.co2eGrams!.gridIntensitySource.toUpperCase() : region.label}
+                </span>
               </div>
             </div>
 
-            <div className="text-[11px] font-mono text-dim">
-              Carbon estimate changes with grid intensity; energy consumption does not.
+            <div className="text-[11px] font-mono text-dim space-y-0.5">
+              {hasCo2e ? (
+                <span>
+                  CO₂e computed by the backend at request time using the{' '}
+                  {co2eGridSource === 'live' ? 'live' : 'static'} grid intensity for this region.
+                  Carbon estimate changes with grid intensity; energy consumption does not.
+                </span>
+              ) : (
+                <span>
+                  CO₂e estimated client-side (historical receipt — no backend value available).
+                  Calculation uses the currently selected region grid intensity and may differ
+                  from the region active when this request was made.
+                </span>
+              )}
             </div>
           </Card>
 

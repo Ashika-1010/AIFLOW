@@ -1,0 +1,110 @@
+🔴 3 SPAM / HIGH-RISK SMS
+Spam 1 — Registration Fee
+
+From: +91 90000 10001
+
+🎉 Congratulations! You have been selected for a Software Development Internship at NextGen Technologies. No interview required. Pay a refundable registration fee of ₹1,999 within 2 hours to confirm your seat. Stipend ₹35,000/month. Send payment screenshot and Aadhaar details to this number. Hurry, only 3 seats remaining!
+
+Expected: 🔴 HIGH RISK
+
+Spam 2 — Bank Details + Urgency
+
+From: +91 90000 10002
+
+Dear Candidate, your profile has been shortlisted for a Data Analyst internship with a ₹45,000 monthly stipend. To release your offer letter, send your Aadhaar, PAN, bank account number and UPI ID. Pay ₹999 processing charges immediately. Your selection will be cancelled if payment is not received today. Call +91 90000 10002 now.
+
+Expected: 🔴 HIGH RISK
+
+Spam 3 — Suspicious Link
+
+From: +91 90000 10003
+
+🎓 INTERNSHIP ALERT: You are selected for a Work From Home internship with ₹50,000/month stipend! No interview needed. Complete verification NOW to secure your position: http://example.com/internship. A refundable security deposit of ₹2,500 is required. Offer expires in 1 hour. Contact +91 90000 10003.
+
+Expected: 🔴 HIGH RISK
+
+🟢 3 FAIR / LEGITIMATE SMS
+Fair 1 — Normal Interview Invitation
+
+From: +91 90000 20001
+
+Hello Ananya, your application for the Software Development Intern position at TechNova Solutions has been shortlisted. Please attend the technical interview on 28 August at 11:00 AM. There is no registration fee or payment required. You can verify the interview details through our official careers portal. – TechNova Recruitment Team
+
+Expected: 🟢 SAFE
+
+Fair 2 — Internship Confirmation
+
+From: +91 90000 20002
+
+Dear Rahul, congratulations! You have been selected for the Data Analyst Internship at DataVerse Technologies. The internship is for 3 months with a stipend of ₹12,000/month. Our HR team will send onboarding instructions through the official company portal. No payment is required. For questions, please use the contact details listed on our official website.
+
+Expected: 🟢 SAFE
+
+Fair 3 — Deadline Without Scam Indicators
+
+From: +91 90000 20003
+
+Hi Priya, you have been shortlisted for the AI Research Internship at BrightLabs. Please confirm your availability by Friday so that we can schedule your technical interview. The internship offers a stipend of ₹18,000/month and does not require any registration or security fee. – BrightLabs Recruitment Team
+
+Expected: 🟢 SAFE
+
+This is useful because your system should not treat every deadline as a scam indicator.
+
+⚪ 3 INCOMPLETE / AMBIGUOUS SMS
+Incomplete 1 — Threat
+
+From: +91 90000 30001
+
+I will kill you if you don't respond to this message.
+
+Expected: ⚪ INSUFFICIENT INFORMATION / UNRELATED
+
+Your system shouldn't classify this as an internship scam because there isn't actually an internship offer to analyze.
+
+Incomplete 2 — Extremely Vague
+
+From: +91 90000 30002
+
+Congratulations! You have been selected. Contact me immediately for further details.
+
+Expected: ⚪ INSUFFICIENT INFORMATION
+
+Missing:
+
+Company
+Role
+Stipend
+Selection process
+Payment information
+Official verification details
+Incomplete 3 — Vague Recruitment Message
+
+From: +91 90000 30003
+
+Hi, we saw your profile and have an opportunity for you. Call me urgently to discuss the internship.
+
+Expected: ⚪ INSUFFICIENT INFORMATION
+
+There isn't enough information to determine whether it's legitimate or fraudulent.
+
+🧪 Good testing sequence for your demo
+
+Use these three live:
+
+1. High Risk
+
++91 90000 10001
+
+→ Registration fee + urgency + Aadhaar + unrealistic stipend
+
+2. Fair
+
++91 90000 20001
+
+→ Normal interview + no payment
+
+3. Insufficient
+
++91 90000 30002
+
+→ Not enough information

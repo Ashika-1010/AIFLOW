@@ -1,0 +1,82 @@
+NETWORKING COMPUTING
+ Two-Page Study Notes
+ 
+1. What is Networking?
+Computer networking is the connection of two or more computers or devices so they can communicate and share
+resources. Resources may include files, printers, applications, internet access, and data.
+2. Basic Components of a Network
+Component
+Purpose
+Computer / Client
+Requests or uses services and data.
+Server
+Provides services, files, applications, or data.
+Switch
+Connects devices within a local network.
+Router
+Connects different networks and forwards packets.
+Access Point
+Provides wireless network access.
+NIC
+Allows a device to connect to a network.
+3. Types of Networks
+LAN: Local Area Network, used in a small area such as a home, lab, or office.
+MAN: Metropolitan Area Network, covers a city or large campus area.
+WAN: Wide Area Network, connects networks over large geographical areas. The Internet is the largest example.
+WLAN: Wireless LAN that uses wireless communication, commonly Wi-Fi.
+4. Network Topologies
+Star: All devices connect to a central switch or hub. Easy to manage, but the central device is important.
+Bus: Devices share a common communication line.
+Ring: Devices form a circular connection.
+Mesh: Devices have multiple connections, giving high reliability but increasing cost and complexity.
+5. Important Networking Concepts
+IP Address: A logical address used to identify a device/interface on a network.
+MAC Address: A hardware-level address associated with a network interface.
+Packet: A small unit of data sent across a network.
+Protocol: A set of rules used for communication between devices.
+Bandwidth: The amount of data a network link can carry per unit of time.
+Latency: The time taken for data to travel from one point to another.
+
+NETWORKING COMPUTING — PAGE 2
+6. Common Network Protocols
+Protocol
+Main Use
+HTTP / HTTPS
+Web communication; HTTPS adds encryption.
+TCP
+Reliable, ordered delivery of data.
+UDP
+Faster, connectionless communication where some loss may be acceptable.
+IP
+Addressing and routing packets between networks.
+DNS
+Converts domain names into IP addresses.
+DHCP
+Automatically provides network configuration such as IP addresses.
+FTP
+Transfers files between systems.
+7. Network Models
+OSI Model: A seven-layer reference model: Physical, Data Link, Network, Transport, Session, Presentation, and
+Application. It helps us understand how communication functions are divided into layers.
+TCP/IP Model: A practical networking model commonly described using Application, Transport, Internet, and Network
+Access layers.
+8. Client-Server and Peer-to-Peer Computing
+Client-Server: Clients request services from a central server. Example: a browser requesting a webpage from a web
+server.
+Peer-to-Peer (P2P): Devices can communicate directly and share resources without depending completely on one
+central server.
+9. Network Security Basics
+Network security protects devices, data, and communication from unauthorized access and attacks. Common
+practices include strong passwords, authentication, encryption, firewalls, secure protocols, software updates, and
+access control.
+10. Advantages of Computer Networking
+ Resource sharing
+ Fast communication
+ Centralized data and services
+ Internet and application access
+ Easier collaboration and management
+ Scalability when more devices or services are added
+Quick Revision
+Remember: Switch → connects devices in a network | Router → connects networks | IP → logical addressing | MAC
+→ interface identification | DNS → name to IP | DHCP → automatic network configuration | TCP → reliable delivery |
+UDP → lightweight/faster delivery.

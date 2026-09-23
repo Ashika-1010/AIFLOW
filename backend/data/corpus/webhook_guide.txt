@@ -1,0 +1,20 @@
+Webhook Integration Guide
+
+AIFlow supports webhooks for real-time event notifications. Configure webhooks at app.aiflow.dev/settings/webhooks.
+
+Supported events:
+- request.completed: Fired after every API request completes
+- request.escalated: Fired when a small-model attempt is escalated to large model
+- limit.approaching: Fired when 80% of monthly quota is consumed
+- limit.exceeded: Fired when rate limit is hit
+
+Webhook payload format (JSON):
+{
+  "event": "request.completed",
+  "timestamp": "2026-09-19T09:42:15Z",
+  "data": { "receiptId": "AF-0284", "pathway": "deterministic", "latencyMs": 2 }
+}
+
+Security: All webhook payloads are signed with HMAC-SHA256 using your webhook secret. Verify the X-AIFlow-Signature header before processing.
+
+Retry policy: Failed webhook deliveries are retried 3 times with exponential backoff (1 min, 5 min, 30 min). After 3 failures, the webhook is disabled and you receive an email alert.

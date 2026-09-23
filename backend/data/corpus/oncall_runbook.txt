@@ -1,0 +1,11 @@
+On-Call Runbook — Database Latency Escalation
+
+Step 1: When database connection latency exceeds 500ms, check Read Replica connection pool saturation in Grafana dashboard (panel: db-pool-utilization).
+
+Step 2: If pool utilisation exceeds 95%, initiate scale-up script: ./scripts/scale-db-replicas.sh --count +2. Wait 3 minutes for replicas to warm up.
+
+Step 3: If latency persists for more than 3 minutes after scale-up, page the primary database engineer via PagerDuty rotation "db-primary-oncall".
+
+Step 4: If the primary DB host CPU exceeds 90%, initiate read-traffic failover: ./scripts/failover-read-traffic.sh --region us-east-1.
+
+Step 5: Post an incident note in #incidents Slack channel within 5 minutes of detection. Include timestamp, affected region, and current p95 latency.

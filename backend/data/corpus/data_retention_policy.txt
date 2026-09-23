@@ -1,0 +1,11 @@
+Data Retention Policy v2.1
+
+User request logs are retained for 90 days in hot storage (S3 Standard) and moved to cold storage (S3 Glacier) for 3 years before permanent deletion.
+
+Model inference outputs are not stored beyond the request lifecycle unless the user explicitly enables receipt logging via the dashboard setting "Save Receipts".
+
+Personal data subject to GDPR right-to-erasure requests must be purged within 72 hours of a verified deletion request. Contact privacy@aiflow.dev to initiate.
+
+Audit logs for billing and compliance are retained for 7 years in accordance with financial regulations. These logs do not contain request content, only metadata.
+
+Database backups are retained for 30 days with point-in-time recovery up to 5 minutes granularity.

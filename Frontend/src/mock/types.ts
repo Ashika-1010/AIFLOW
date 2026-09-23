@@ -6,6 +6,21 @@ export interface EnergyBand {
   high: number;
 } // Wh
 
+/**
+ * Backend-computed CO₂e estimate in gCO₂e (grams of CO₂ equivalent).
+ * Three uncertainty bands matching the energy estimate bands.
+ * Formula: co2e_g = (energy_wh / 1000) × gridIntensityGPerKwh
+ * Values are estimates, not measured emissions.
+ * Absent (undefined) on historical and demo receipts.
+ */
+export interface Co2eGrams {
+  low: number;
+  central: number;
+  high: number;
+  gridIntensityGPerKwh: number;  // gCO₂e/kWh used in the calculation
+  gridIntensitySource: 'static' | 'live';
+}
+
 export interface Receipt {
   id: string;                    // "AF-0284"
   timestamp: string;             // ISO
@@ -27,6 +42,10 @@ export interface Receipt {
   routerOverheadWh: number;
   escalationRegretWh: number;    // 0 unless escalated
   response: string;
+  // Optional — set by backend. True for seed/fixture rows, never for real executions.
+  isDemo?: boolean;
+  // Backend-computed CO₂e estimate. Absent on historical/demo receipts.
+  co2eGrams?: Co2eGrams;
 }
 
 export interface AuditSummary {
@@ -37,6 +56,9 @@ export interface AuditSummary {
   centralSavingPct: number;
   pessimisticSavingPct: number;
   qualityRetentionPct: number;
+  // Added by backend to distinguish real vs demo data
+  realExecutionCount: number;
+  demoCount: number;
 }
 
 export interface Region {

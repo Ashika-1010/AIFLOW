@@ -1,0 +1,16 @@
+Billing FAQ
+
+Q: How is usage calculated?
+A: Usage is calculated per API request. Each request through the small-model pathway costs $0.0008 per request. Large-model requests cost $0.0182 per request. Deterministic and cache pathways are free.
+
+Q: What is the free tier?
+A: The free tier includes 100 requests per month at no charge. Free-tier requests are rate-limited to 60 requests per minute. No credit card required to start.
+
+Q: How do I upgrade to Pro?
+A: Visit app.aiflow.dev/billing and select the Pro plan at $29/month. Pro includes 10,000 requests per month, priority routing, and SLA guarantees.
+
+Q: Are partial months prorated?
+A: Yes. If you upgrade mid-month, you are charged a prorated amount for the remaining days.
+
+Q: What payment methods are accepted?
+A: Visa, Mastercard, American Express, and ACH bank transfer for Enterprise accounts.

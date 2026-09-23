@@ -1,0 +1,32 @@
+AIFlow SDK Reference
+
+Python SDK installation: pip install aiflow-sdk
+
+Basic usage:
+```python
+from aiflow import AIFlowClient
+client = AIFlowClient(api_key="your-key")
+receipt = client.complete("What is 27 × 43?", quality_floor=0.6, region="US")
+print(receipt.response)    # "1161"
+print(receipt.pathway)     # "deterministic"
+print(receipt.energy_wh.central)  # 0.000001
+```
+
+Async usage:
+```python
+import asyncio
+from aiflow import AsyncAIFlowClient
+async def main():
+    async with AsyncAIFlowClient(api_key="your-key") as client:
+        receipt = await client.complete("Explain SOLID principles")
+response = asyncio.run(main())
+```
+
+TypeScript SDK: npm install @aiflow/sdk
+```typescript
+import { AIFlowClient } from '@aiflow/sdk';
+const client = new AIFlowClient({ apiKey: process.env.AIFLOW_KEY });
+const receipt = await client.complete({ query: "Hello", qualityFloor: 0.6 });
+```
+
+All SDK methods return the same Receipt schema as the REST API.

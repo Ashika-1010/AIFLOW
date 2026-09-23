@@ -1,0 +1,18 @@
+Incident Management Process
+
+Severity levels:
+- P0: Complete service outage affecting all users. Response within 15 minutes. All-hands bridge opened immediately.
+- P1: Major feature degradation affecting >10% of users. Response within 1 hour. On-call engineer leads.
+- P2: Minor degradation or elevated error rates. Response within 4 hours. Regular business hours only.
+- P3: Non-critical issues, cosmetic bugs. Response within 2 business days.
+
+Incident lifecycle:
+1. Detection: Automated alert via PagerDuty or user report via support
+2. Triage: On-call engineer assesses severity and initiates response
+3. Mitigation: Immediate action to reduce impact (rollback, traffic shift, scale-up)
+4. Resolution: Root cause identified and fixed
+5. Post-mortem: Blameless post-mortem completed within 72 hours for P0/P1
+
+Communication: External status updates posted to status.aiflow.dev every 30 minutes during active incidents. Internal updates in #incidents Slack channel.
+
+Post-mortem template: available at docs.aiflow.dev/incident-postmortem-template

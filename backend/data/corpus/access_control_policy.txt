@@ -1,0 +1,17 @@
+Access Control Policy — AIFlow Engineering
+
+Role definitions:
+- read-only: Can view dashboards, logs, and receipts. Cannot make API calls or modify configuration.
+- developer: Can make API calls, view receipts, and manage own API keys.
+- admin: Full access including user management, billing, and infrastructure settings.
+- super-admin: Reserved for founders and senior engineering leads. Required for production database access.
+
+Least-privilege principle: All service accounts are granted only the minimum permissions required for their function. Permissions are reviewed quarterly.
+
+Production access requirements:
+1. MFA must be enabled on the account
+2. Access is via temporary credentials (8-hour session limit)
+3. All production actions are logged to an immutable audit trail
+4. Break-glass access for emergencies requires dual approval via PagerDuty
+
+Off-boarding: When an employee leaves, all access must be revoked within 4 hours. API keys associated with the account are automatically rotated.

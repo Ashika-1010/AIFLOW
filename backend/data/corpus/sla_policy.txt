@@ -1,0 +1,11 @@
+Service Level Agreement (SLA) — AIFlow API
+
+The AIFlow API guarantees 99.9% monthly uptime for Pro and Enterprise tiers. Free tier is provided on best-effort basis with no SLA.
+
+Latency SLA: p50 < 800ms, p95 < 2500ms, p99 < 5000ms for standard small-model requests. Large-model requests have p95 < 8000ms.
+
+Planned maintenance windows are announced 72 hours in advance via status.aiflow.dev and the #maintenance Slack channel.
+
+Incident response times: P0 (service down) = 15 minutes, P1 (significant degradation) = 1 hour, P2 (minor degradation) = 4 hours.
+
+SLA credits are issued as account credits: 99.5-99.9% uptime = 10% credit, 99.0-99.5% = 25% credit, below 99.0% = 50% credit on the affected month's bill.

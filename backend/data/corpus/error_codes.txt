@@ -1,0 +1,17 @@
+AIFlow API Error Codes Reference
+
+400 Bad Request: The request body is malformed or missing required fields. Check that query is a non-empty string and qualityFloor is between 0.0 and 1.0.
+
+401 Unauthorized: The API key is missing or invalid. Ensure the Authorization header contains a valid Bearer token.
+
+403 Forbidden: The API key does not have permission for this operation. Enterprise-only endpoints require an Enterprise plan.
+
+404 Not Found: The requested resource (e.g., receipt ID) does not exist.
+
+429 Too Many Requests: Rate limit exceeded. Check the Retry-After header for the reset time.
+
+500 Internal Server Error: An unexpected error occurred. The error is logged on our side. Retry with exponential backoff (1s, 2s, 4s, 8s).
+
+503 Service Unavailable: The service is temporarily unavailable, usually during maintenance windows. Check status.aiflow.dev.
+
+Timeout: Requests that take longer than 30 seconds are terminated. For long-running tasks, use the async API (POST /v1/complete/async).

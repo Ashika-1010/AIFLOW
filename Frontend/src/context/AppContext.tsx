@@ -1,7 +1,6 @@
 import React, { createContext, useContext, useState, type ReactNode } from 'react';
 import type { Region, Receipt } from '../mock/types';
 import { DEFAULT_REGION } from '../mock/regions';
-import { MOCK_RECEIPTS } from '../mock/data';
 
 export interface SessionStats {
   requests: number;
@@ -22,6 +21,9 @@ interface AppContextType {
   receipts: Receipt[];
   methodologyModalOpen: boolean;
   setMethodologyModalOpen: (open: boolean) => void;
+  /** The Live Run prompt — persisted in context so it survives route unmount/remount. */
+  liveRunPrompt: string;
+  setLiveRunPrompt: (prompt: string) => void;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -31,7 +33,10 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   const [qualityFloor, setQualityFloor] = useState<number>(0.60);
   const [pessimistic, setPessimistic] = useState<boolean>(false);
   const [methodologyModalOpen, setMethodologyModalOpen] = useState<boolean>(false);
-  const [receipts, setReceipts] = useState<Receipt[]>(MOCK_RECEIPTS);
+  const [receipts, setReceipts] = useState<Receipt[]>([]);
+  // Empty string: no hardcoded demo prompt. The user's typed text is preserved
+  // across navigation because AppContext is never unmounted while the app runs.
+  const [liveRunPrompt, setLiveRunPrompt] = useState<string>('');
 
   const [sessionStats, setSessionStats] = useState<SessionStats>({
     requests: 0,
@@ -72,7 +77,9 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
         recordSessionRequest,
         receipts,
         methodologyModalOpen,
-        setMethodologyModalOpen
+        setMethodologyModalOpen,
+        liveRunPrompt,
+        setLiveRunPrompt,
       }}
     >
       {children}

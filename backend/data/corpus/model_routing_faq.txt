@@ -1,0 +1,16 @@
+Model Routing FAQ
+
+Q: How does AIFlow decide which model tier to use?
+A: AIFlow uses a 6-stage decision pipeline: deterministic gate, exact cache, semantic cache, local retrieval, complexity classification, and verification with escalation.
+
+Q: What is the quality floor parameter?
+A: The qualityFloor (0.0 to 1.0) is your minimum acceptable response quality threshold. A value of 0.60 (default) routes most queries to the small model. Setting 0.85 will route more queries to the large model for higher confidence outputs.
+
+Q: What happens when the small model fails verification?
+A: The request is automatically escalated to the large model. The energy spent on the failed small-model attempt is reported as escalationRegretWh and subtracted from savings.
+
+Q: Can I force a specific model tier?
+A: Not directly. Set qualityFloor=0.0 to prefer the small model, or qualityFloor=1.0 to force the large model for all non-deterministic queries.
+
+Q: Are cache responses always correct?
+A: Cache responses are blocked for time-sensitive queries (containing "today", "now", "latest", "current"). Stable factual queries are served from cache with cosine similarity >= 0.90.

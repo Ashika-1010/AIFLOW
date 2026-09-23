@@ -1,0 +1,16 @@
+AIFlow Sustainability Methodology v1.0
+
+Energy measurement follows the comprehensive boundary approach: GPU compute energy plus idle hardware, hosting overhead, networking, and cooling (PUE factor 1.09–1.25, central 1.15).
+
+Small model (8B class): 0.09–0.24 Wh per 1,000 output tokens; 0.015–0.035 Wh per 1,000 prompt tokens.
+Large model (70B class): 0.28–1.10 Wh per 1,000 output tokens; 0.03–0.14 Wh per 1,000 prompt tokens.
+
+Deterministic resolution: 0.0000005–0.000003 Wh flat per query.
+Cache hit: 0.00001–0.00004 Wh flat per query.
+Retrieval: 0.0002–0.0006 Wh flat per query.
+
+Carbon intensity is sourced from the Electricity Maps API (live) or the annual grid average table (static fallback): India 713 gCO2e/kWh, Germany 344, USA 369, France 56, Sweden 41.
+
+Reported savings are net of router overhead (0.00003 Wh per request) and escalation regret (energy spent on failed small-model attempts).
+
+Sources: ML.ENERGY Benchmark v3.0 (2025), Google Gemini inference methodology (Aug 2025), arXiv 2407.16893.

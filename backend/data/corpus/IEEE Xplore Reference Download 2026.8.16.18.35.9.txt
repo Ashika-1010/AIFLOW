@@ -1,0 +1,38 @@
+1. L. S. Larkey and W. B. Croft, “Combining classifiers in text categorization ”, In Proceedings of SIGIR conference on Research and development in information retrieval, pages 289–297 ( 1996 ).
+
+2. P. Franz, A. Zaiss, S. Schulz, U. Hahn, and R Klar, “Automated coding of diagnoses-three methods compared ”, In Proceedings of the AMIA Symposium, page 250–254 ( 2000 ).
+
+3. Z. C. Lipton, D. C. Kale, C. Elkan and R. Wetzell, “Learning to diagnose with LSTM recurrent neural networks ”, In Proceedings of the ICLR ( 2016 ).
+
+4. Tal Baumel, J. Nassour-Kassis, R. Cohen and M. Elhadad, “Multi-Label Classification of Patient Notes a Case Study on ICD Code Assignment ”, In proceedings of AAAI, pages 409–416 ( 2018 ).
+
+5. P. Xie, E. Xing and M. Young, “A Neural Architecture for Automated ICD Coding ”, In proceedings of ACL, pages 1066–1076 ( 2018 ).
+
+6. T. Akiba, B. Sy and A. Zeidan, “ICD-10 code retrieval based on distributional semantics of diagnosis descriptions ”, In Proceedings of ICAICTA, pages 13–18 ( 2017 ).
+
+7. K. Bhatia, H. Jain, P. Kar, M. Varma, and P. Jain, “Sparse local embeddings for extreme multi-label classification ”, In Advances in NIPS, pages 730–738 ( 2015 ).
+
+8. Y. Prabhu and M. Varma, “Fastxml: A fast, accurate and stable tree-classifier for extreme multi-label learning ”, In Proceedings of the 20th ACM SIGKDD international conference on Knowledge discovery and data mining, pages 263–272 ( 2014 ).
+
+9. J. Liu, W. Chang, Y. Wu and Y. Yang, “Deep Learning for Extreme Multi-label Text Classification ”, In Proceedings of SIGIR, pages 115–124 ( 2017 ).
+
+10. I. Sutskever, O. Vinyals, and Q.V. Le, “Sequence to sequence learniig with neural network ”, In proceedings of NIPS, pages 3104–3112 ( 2014 ).
+
+11. D. Bhdanau, K. Cho, and Y. Bengio, “Neural machine translation by jointly learning to align and translate ”, In proceedings of ICLR ( 2015 ).
+
+12. K. Cho, B. Merrienboer, C. Gulcehre, D. Bahdanau, F. Bougares, H. Schwenk, “Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation ”, In Proceedings of EMNLP pages 1724–34 ( 2014 ).
+
+13. E. Aramaki, M. Morita, Y. Kano, T. Ohkuma, “Overview of the NTCIR-11 MedNLP-2 Task ”, In Proceedings of the 11th NTCIR Conference, pages 147–154 ( 2014 ).
+
+14. P. Gage. “A New Algorithm for Data Compression ”, The C Users Journal Vol. 12 Issue 2, pages 23–38 (Feb. 1994 ).
+
+15. “Byte Pair Encoding for Python! ”, ( https://github.com/soaxelbrooke/python-bpe ).
+
+16. “Home - Keras Documentation ”, ( https://keras.io/ja/ ).
+
+17. D. Kingma and J. Ba, “Adam: A method for stochastic optimization ”, In Proceedings of ICLR ( 2015 ).
+
+18. I. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley, S. Ozair, “Generative adversarial nets. In Advances in neural information processing systems ”, In Proceedings of the 27th International Conference on NIPS Vol. 2, pages 2672–2680 ( 2014 ).
+
+19. “ICD10Data.com ” ( http://www.icd10data.com/ ).
+

@@ -1,0 +1,1102 @@
+[
+  {
+    "prompt": "What is 27 × 43?",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "Calculate 1024 * 1024",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "(450 * 12) / (3.5 + 2.5)",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "What is 15% of 240?",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "Compute 999 - 437",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "What is 2 to the power of 10?",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "How much is 3.14 * 2 * 5?",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "Divide 144 by 12",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "What is 8 factorial?",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "Calculate the square root of 196",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "What is 7 * 8 * 9?",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "Convert 120 miles per hour to km/h",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "100 degrees Fahrenheit in Celsius",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "Convert 5 kilograms to pounds",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "How many days between 2026-01-01 and 2026-09-19?",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "How many hours is 3.5 days?",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "Convert 500 grams to ounces",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "What is 256 / 16?",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "Calculate 2.718 ^ 2",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "What is 0.1 + 0.2?",
+    "label": 1,
+    "category": "arithmetic"
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the boiling point of water?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the speed of light in a vacuum?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "Who wrote Hamlet?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What year did World War II end?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the atomic number of carbon?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the chemical formula for water?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "How many planets are in the solar system?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What language is spoken in Brazil?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the tallest mountain on Earth?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the currency of Japan?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "Who painted the Mona Lisa?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the largest ocean on Earth?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What does HTTP stand for?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the default port for HTTPS?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the time complexity of binary search?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What does CPU stand for?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the SI unit of electric current?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the freezing point of water in Celsius?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "How many bytes are in a megabyte?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the output of print('hello world') in Python?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "Summarize the main purpose of HTTP status code 429 in one sentence.",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What does DNS stand for?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is IPv4?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the purpose of a firewall?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the main use of the git stash command?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What does REST stand for?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is a pointer in C?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the difference between TCP and UDP in one sentence?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the purpose of the WHERE clause in SQL?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is a foreign key in databases?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What does SOLID stand for in software design?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the purpose of a constructor in OOP?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is idempotency in REST APIs?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is a hash table?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the difference between == and === in JavaScript?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is the purpose of the useEffect hook in React?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What does async/await do in JavaScript?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is a closure in JavaScript?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "What is tail recursion?",
+    "label": 1,
+    "category": "stable_factual"
+  },
+  {
+    "prompt": "Rewrite this in a professional tone: 'hey can u send me that file asap thx'",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Translate 'Good morning, how may I help you?' into Spanish.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Generate a short commit message for fixing a CSS overflow bug.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a one-line description for a Python function that sorts a list.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Summarize this in one sentence: The quick brown fox jumps over the lazy dog.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Convert this list to bullet points: apples, oranges, bananas, grapes.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a subject line for an email about a delayed shipment.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Translate 'Thank you for your patience' into French.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Rewrite this error message to be more user-friendly: 'Error 500 internal server error'",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Draft a polite follow-up email after a job interview.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a TypeScript interface for a user with id, email, and role fields.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Generate a function name for a method that validates email addresses.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a git tag message for version 2.1.0 release.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Translate 'Please enter your password' into German.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a one-sentence product description for a task management app.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Rewrite this in active voice: 'The report was submitted by the team.'",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Create a short README description for a weather CLI tool.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Convert this JSON to a bullet list: {name: 'Alice', age: 30, city: 'Paris'}",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a one-line docstring for a function that calculates compound interest.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Generate a CSS class name for a primary call-to-action button.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a polite decline email for a meeting request.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Summarize the concept of recursion in one sentence.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a short description for a REST API endpoint that creates users.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Rewrite this variable name to be more descriptive: 'var d = new Date()'",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a brief onboarding message for a new team member.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Translate 'Loading, please wait...' into Japanese.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Generate a commit message for adding dark mode support.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a one-liner description of what a load balancer does.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Format this list as a Markdown table: Name, Age: Alice 30, Bob 25, Carol 35.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a toast notification message for a successful file upload.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Explain the CAP theorem and its implications for distributed database design.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Compare and contrast dependency injection and service locator patterns.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the trade-offs between microservices and monolithic architecture for a startup.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Critique the philosophical viability of modal realism against ersatz modal realism.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain why the double-slit experiment challenges classical physics intuitions.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze Kant's categorical imperative and its weaknesses as a moral framework.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Compare merge sort and quicksort in terms of best/average/worst-case complexity.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain the Byzantine Generals problem and how Practical BFT solves it.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the trade-offs between CQRS and traditional CRUD architectures.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain the difference between optimistic and pessimistic concurrency control.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Discuss why eventual consistency is difficult to reason about in distributed systems.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the trade-offs between GraphQL and REST for a mobile-first product.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain why mutable shared state is the root of most concurrency bugs.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Compare structural typing versus nominal typing in programming languages.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain the implications of Gödel's incompleteness theorems for formal systems.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the trade-offs between eager and lazy evaluation strategies.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain why tail-call optimization matters for functional programming.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Compare forward-chaining and backward-chaining in inference engines.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the security implications of JWT versus opaque session tokens.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain why lock-free data structures are hard to implement correctly.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain the difference between let, const, and var in JavaScript.",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "What is the difference between a stack and a queue?",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "Explain how a binary search tree works.",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "What is the difference between shallow copy and deep copy?",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "Explain what a race condition is in concurrent programming.",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "What is the difference between authentication and authorization?",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "Explain what memoization is and give a simple example.",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "What is the difference between SQL and NoSQL databases?",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "Explain what a webhook is and how it differs from polling.",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "What is the difference between a process and a thread?",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "Explain what CORS is and why browsers enforce it.",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "What is the difference between a left join and an inner join in SQL?",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "Explain what an API gateway does.",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "What is the difference between synchronous and asynchronous programming?",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "Explain what a virtual DOM is in React.",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "What is the difference between encryption and hashing?",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "Explain what a deadlock is and how to prevent it.",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "What is the Observer pattern?",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "Explain what a CDN is and why it improves performance.",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "What is the difference between unit testing and integration testing?",
+    "label": 1,
+    "category": "reasoning_simple"
+  },
+  {
+    "prompt": "Analyze this technical document and summarize the trade-offs between Raft and Paxos consensus algorithms.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Review this distributed systems post-mortem and identify the root cause of the split-brain failure.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Analyze the following research paper abstract and critique its methodology.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Review this 500-line Python module and identify potential performance bottlenecks.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Analyze this architectural design document and identify single points of failure.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Review this database schema with 20 tables and suggest normalization improvements.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Analyze this security audit report and prioritize the findings by CVSS score.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Review this API specification and identify inconsistencies in the error handling contract.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Analyze this incident post-mortem and identify systemic process improvements.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Review this pull request with 300 lines of changes and provide a thorough code review.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Analyze this technical specification and identify gaps in the requirements.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Review this machine learning training pipeline and identify data leakage risks.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Analyze this microservices communication diagram and identify potential bottlenecks.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Review this Terraform infrastructure code and identify security misconfigurations.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Analyze this legal contract for software licensing and identify problematic clauses.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Verify whether this cryptographic signature code is vulnerable to timing attacks.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Analyze this complex financial model and identify the key assumptions and risks.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Review this React component tree for prop drilling issues and suggest refactoring.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Analyze this network trace and identify the root cause of the latency spike.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "Review this data pipeline and identify potential data quality issues.",
+    "label": 0,
+    "category": "long_document"
+  },
+  {
+    "prompt": "What do you think about TypeScript?",
+    "label": 1,
+    "category": "ambiguous"
+  },
+  {
+    "prompt": "Can you help me with my code?",
+    "label": 1,
+    "category": "ambiguous"
+  },
+  {
+    "prompt": "I'm having trouble with my React app.",
+    "label": 1,
+    "category": "ambiguous"
+  },
+  {
+    "prompt": "Tell me something interesting about Python.",
+    "label": 1,
+    "category": "ambiguous"
+  },
+  {
+    "prompt": "What's the best way to learn programming?",
+    "label": 1,
+    "category": "ambiguous"
+  },
+  {
+    "prompt": "How do I get started with machine learning?",
+    "label": 0,
+    "category": "ambiguous"
+  },
+  {
+    "prompt": "What should I use for my next project?",
+    "label": 0,
+    "category": "ambiguous"
+  },
+  {
+    "prompt": "Is JavaScript a good language?",
+    "label": 0,
+    "category": "ambiguous"
+  },
+  {
+    "prompt": "How do I improve my coding skills?",
+    "label": 0,
+    "category": "ambiguous"
+  },
+  {
+    "prompt": "What's the difference between a good and bad engineer?",
+    "label": 0,
+    "category": "ambiguous"
+  },
+  {
+    "prompt": "Explain quantum entanglement with formal wave function collapse equations.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the trade-offs between Lamport clocks and vector clocks for distributed tracing.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain the formal proof of the pumping lemma for context-free languages.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze how consistent hashing minimises key remapping in distributed hash tables.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain the security implications of prototype pollution in JavaScript.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Compare the computational complexity of NP-complete problems and give examples.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the memory layout of a C++ virtual function table (vtable).",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain why floating-point arithmetic is not associative with a concrete example.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the CAP theorem proof and explain which systems sacrifice which guarantee.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain the formal semantics of Hoare logic and its use in program verification.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the space-time trade-off in the Bloom filter data structure.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain why the halting problem is undecidable using a diagonal argument.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Compare B-trees and LSM-trees for write-heavy versus read-heavy workloads.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the security properties of TLS 1.3 handshake versus TLS 1.2.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain the formal definition of a monad in category theory and Haskell.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the correctness of the two-generals problem and its implications.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain how garbage collection mark-and-sweep differs from reference counting.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the Paxos made simple paper and identify the protocol's liveness conditions.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain why epsilon-delta proofs are needed for rigorous limit definitions.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the implications of the no-free-lunch theorem for machine learning.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain what post-quantum cryptography algorithms are being standardized by NIST.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the relationship between information theory entropy and compression.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain how kernel-level scheduling differs from user-space cooperative scheduling.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the correctness guarantees of snapshot isolation in databases.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain the formal definition of linearizability in concurrent systems.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the memory consistency models of x86 vs ARM architectures.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain how Diffie-Hellman key exchange achieves forward secrecy.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze the trade-offs in using eventual consistency for a social media feed.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain the computational complexity of the knapsack problem and its approximations.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Analyze why the Singleton pattern is considered an anti-pattern in modern design.",
+    "label": 0,
+    "category": "reasoning_complex"
+  },
+  {
+    "prompt": "Explain what Git is in one paragraph.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a Python function that reverses a string.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "What is a REST API?",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Explain what a variable is in programming.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a hello world program in Python.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "What is a for loop?",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Explain what an if statement does.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a CSS rule to make text red.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "What is npm?",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Explain what a package manager does.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a SQL query to select all rows from a users table.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "What is the purpose of the HTML head element?",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Explain what a boolean is.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a function that checks if a number is even.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "What is an array in programming?",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Explain what JSON stands for.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a regex to match an email address.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "What is the purpose of the return statement?",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Explain what a null value represents.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a function to calculate factorial recursively.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "What is version control?",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Explain what a merge conflict is.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a function that finds the maximum value in a list.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "What is the purpose of the .gitignore file?",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Explain what a pull request is.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a bash command to list all files in a directory.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "What is Docker?",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Explain what a container is.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "Write a function that counts words in a string.",
+    "label": 1,
+    "category": "short_generative"
+  },
+  {
+    "prompt": "What is the difference between a library and a framework?",
+    "label": 1,
+    "category": "short_generative"
+  }
+]

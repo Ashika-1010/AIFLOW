@@ -1,0 +1,31 @@
+Model Cards — AIFlow Inference Tiers
+
+Q: Which models does AIFlow currently use?
+A: Tier 2 uses openai/gpt-oss-20b and Tier 3 uses openai/gpt-oss-120b, both served via Groq.
+
+Q: What is the Small Model (Tier 2)?
+A: openai/gpt-oss-20b — a 20-billion-parameter reasoning model (3.6B active via MoE architecture), served on Groq LPU hardware.
+
+Q: What is the Large Model (Tier 3)?
+A: openai/gpt-oss-120b — a 120-billion-parameter reasoning model, served on Groq LPU hardware.
+
+Tier 2: openai/gpt-oss-20b (served via Groq)
+- Parameters: 20 billion (3.6B active — MoE architecture)
+- Context window: 128k tokens
+- Max completion tokens: 2048 (AIFlow configuration)
+- Reasoning: chain-of-thought reasoning model; AIFlow sets reasoning_effort=low and include_reasoning=False so only the final answer is returned
+- Energy: 0.09–0.24 Wh per 1,000 output tokens; 0.015–0.035 Wh per 1,000 prompt tokens
+
+Tier 3: openai/gpt-oss-120b (served via Groq)
+- Parameters: 120 billion
+- Context window: 128k tokens
+- Max completion tokens: 2048 (AIFlow configuration)
+- Reasoning: chain-of-thought reasoning model; AIFlow sets reasoning_effort=low and include_reasoning=False so only the final answer is returned
+- Energy: 0.28–1.10 Wh per 1,000 output tokens; 0.03–0.14 Wh per 1,000 prompt tokens
+
+Both models are developed by OpenAI and hosted on Groq LPU infrastructure. Neither model has internet access or real-time knowledge past their training cutoff. For time-sensitive queries, supplement with retrieval-augmented context.
+
+Energy figures are AIFlow estimates derived from published benchmark coefficients (ML.ENERGY Benchmark v3.0, 2025) applied to measured token counts. They are not direct hardware measurements.
+
+Previous Tier 2 model: llama-3.1-8b-instant (deprecated by Groq, August 2026)
+Previous Tier 3 model: llama-3.3-70b-versatile (deprecated by Groq, August 2026)
