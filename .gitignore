@@ -1,3 +1,4 @@
+
 # Dependencies
 node_modules/
 
@@ -5,7 +6,7 @@ node_modules/
 dist/
 build/
 
-# Environment variables
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
@@ -13,7 +14,22 @@ build/
 # Logs
 *.log
 
-# Python (if applicable)
+# Python
 __pycache__/
+*.py[cod]
 venv/
 .venv/
+.venv_*/
+
+# Local SQLite databases and temporary files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Local application state
+backend/receipt_counter.txt
+
+# Local editor settings
+.vscode/
