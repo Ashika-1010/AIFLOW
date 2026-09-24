@@ -82,5 +82,10 @@ export async function uploadDocument(file: File): Promise<{ status: string; file
     }
     throw new Error(`AIFlow API error: ${detail}`);
   }
-  return res.json() as Promise<{ message: string; doc_id: string }>;
+  const body = await res.json();
+
+return {
+  status: body.status ?? body.message ?? 'success',
+  filename: file.name,
+};
 }
