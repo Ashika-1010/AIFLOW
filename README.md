@@ -259,8 +259,6 @@ Refer to the live Swagger documentation for the available request schemas and re
 
 **Project:** AIFlow  
 **Team:** Malloc
-**Hackathon:** Global Innovation Hackathon 2026 — Build for a Better Future
-
 ---
 
 **AIFlow — Smarter routing. Less unnecessary computation. More transparent AI.**
