@@ -8,9 +8,7 @@ By combining deterministic processing, caching, retrieval, model routing, and re
 
 ## 🌐 Live Demo
 
-- **Frontend:** https://aiflow-drab.vercel.app
-- **Backend API:** https://aiflow-production-fe9.up.railway.app
-- **API Documentation:** https://aiflow-production-fe9.up.railway.app/docs
+- **Deployed Link:** https://aiflow-drab.vercel.app
 
 *The live demo requires the backend service to be available.*
 
