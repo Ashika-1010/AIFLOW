@@ -258,12 +258,8 @@ Refer to the live Swagger documentation for the available request schemas and re
 ## 👥 Team
 
 **Project:** AIFlow  
-**Team:** Stack Overflowed  
+**Team:** Malloc
 **Hackathon:** Global Innovation Hackathon 2026 — Build for a Better Future
-
-## 📄 License
-
-This project was developed as a hackathon prototype. Add a license file if you intend to distribute it under a specific open-source license.
 
 ---
 
